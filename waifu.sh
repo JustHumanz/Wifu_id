@@ -128,7 +128,7 @@ function check_sys(){
 function main() {
   echo -e "\e[32m###Backing up/Creating hostapd.conf"
   if [ -f /etc/hostapd/hostapd.conf ]; then mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.BAK; fi
-  echo -e "interface=$1\ndriver=nl80211\nssid=$2\nhw_mode=g\nchannel=acs_survey\nignore_broadcast_ssid=0" > /etc/hostapd/hostapd.conf
+  echo -e "interface=$1\ndriver=nl80211\nssid=$2\nhw_mode=g\nchannel=6\nignore_broadcast_ssid=0" > /etc/hostapd/hostapd.conf
   sleep 1
   echo -e "\e[32m###Backing up/Creating dnsmasq.conf"
   if [ -f /etc/dnsmasq.conf ]; then mv /etc/dnsmasq.conf /etc/dnsmasq.BAK; fi
