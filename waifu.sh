@@ -180,7 +180,7 @@ function debian() {
   hostapdd
   echo -e "\e[32m###View Log"
   echo -e "old log file"
-  touch /srv/http/log.txt.old
+  touch /var/www/html/log.txt.old
   cat /var/www/html/log.txt.old
   tail -f /var/www/html/log.txt /var/lib/misc/dnsmasq.leases
 }
