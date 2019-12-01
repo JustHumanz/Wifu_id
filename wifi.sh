@@ -1,7 +1,7 @@
 #!/bin/bash
 #variable 1 = wifi device
 #variable 2 = internet device
-[ $# -eq 0 ] && { echo "usage: wifi.sh [wireless-device] [internet-device] [AP network name]"; exit 1; }
+[ $# -eq 0 ] && { echo "usage: wifi.sh [wireless-device] [AP network name]"; exit 1; }
 wifi="$1"
 
 cat <<EOF
