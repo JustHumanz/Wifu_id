@@ -180,8 +180,12 @@ function debian() {
   hostapdd
   echo -e "\e[32m###View Log"
   echo -e "old log file"
-  touch /var/www/html/log.txt.old
-  cat /var/www/html/log.txt.old
+  if [[ -f /var/www/html/log.txt.old ]]; then
+    cat /var/www/html/log.txt.old
+  else
+    touch /var/www/html/log.txt.old
+    cat /var/www/html/log.txt.old
+  fi
   tail -f /var/www/html/log.txt /var/lib/misc/dnsmasq.leases
 }
 
@@ -204,8 +208,12 @@ function arch() {
   hostapdd
   echo -e "\e[32m###View Log"
   echo -e "old log file"
-  touch /srv/http/log.txt.old
-  cat /srv/http/log.txt.old
+  if [[ -f /srv/http/log.txt.old ]]; then
+    cat /srv/http/log.txt.old
+  else
+    touch /srv/http/log.txt.old
+    cat /srv/http/log.txt.old
+  fi
   tail -f /srv/http/log.txt /var/lib/misc/dnsmasq.leases
 }
 trap control_c SIGINT
