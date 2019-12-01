@@ -1,9 +1,17 @@
 # Wifu_id
-
-how to use?  
-
+Wifu id is a evil twin of wifi.id you can change with your login portal just replice all in html folder except humanz.php and litle change at index.html and humanz.php
+# How to use?  
+```
 sudo ./wifi.sh <interface name> <ssid name>
+```
 
-example
+Example
+```
+sudo ./wifi.sh wlan0 @wifu.id
+```
+# Tips
+Deauth the real SSID
 
-sudo ./wifi.sh wlan0 @wifu.id 
+# Disclaimer
+..* This tools just for education
+⋅⋅* Do At Your Own Risk
