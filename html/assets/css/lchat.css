@@ -1,0 +1,32 @@
+body {
+	
+}
+#chat-container-show {
+	color:#ffffff;
+	display:block;
+	text-decoration:none;
+	line-height:40px;
+	padding:0 20px;
+	position:fixed;
+	bottom:0;
+	right:10px;
+	background:#CF0A2C;
+}
+
+#chat-container-hide {
+	color:#ffffff;
+	display:block;
+	padding:0 20px;
+	text-decoration:none;
+	line-height:40px;
+	background:#CF0A2C;
+}
+
+#chat-container {
+	position:fixed;
+	bottom:-580px;
+	right:10px;
+	height:560px;
+	width:350px;
+	background:#999999;
+}

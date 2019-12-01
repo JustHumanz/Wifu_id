@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<!-- Mirrored from welcome2.wifi.id/login/assets/fonts/v11/package by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Nov 2019 14:07:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#D52830">
+    <link rel="stylesheet" href="assets/css/fonts.html">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendora139.html?v=0.01">
+    <link rel="stylesheet" type="text/css" href="assets/css/index307f.html?v=0.04">
+    <link rel="stylesheet" type="text/css" href="assets/css/lchat.html" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/promo9093.html?v=0.02" rel="stylesheet">
+    <script src="assets/js/jquery.html"></script>
+    <script src="assets/js/sweetalert.min.html"></script>
+    <script src="assets/js/custome3f9.html?v=0.29"></script>
+    <script src="assets/js/index307f.html?v=0.04"></script>
+    <!--<script src="assets/js/lchat.js"></script>-->
+    <link rel="shortcut icon" href="assets/img/wifikon.html" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/sweetalert.html">
+    <title>Windows 98 Welcome Page</title>
+
+<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//fathom.wifi.id/tracker.js', 'fathom');
+fathom('set', 'siteId', 'YCFCT');
+fathom('trackPageview');
+</script>
+
+Fathom -->
+
+</head>
+<body class="login-page "  onload="getRandomImage()" >
+  
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+    <div id="loading-success" class="loading-lay text-center">
+        <div class="sk-bulat">
+            <img width="50" src="assets/img/spinner.html"> 
+            <div class="loading-word">Login Anda berhasil.. Anda sedang dialihkan ke halaman Landing Page</div>
+        </div>
+    </div>
+    <nav class="navbar">
+	 
+       <span class="nav-logo">
+            <a href="#" onclick="location.reload()"><img src="assets/img/wifi-id.html"></a>
+        </span>	
+			
+        <ul class="nav-menu">
+           			 
+					<li class="nav-menu-item">
+						<!--<a href="speedtest">Speedtest</a>-->
+						<a href="https://wifi-id.speedtestcustom.com/">Speedtest</a>
+					</li>
+					<li class="nav-menu-item ">
+						<a href="how-use.html">Cara Pakai</a>
+					</li>
+            <li class="nav-menu-item has-dropdown">
+                <a>Ind<span class="icon-dropdown"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-menu-item">
+                    </li>
+                    <li style="cursor: pointer;" class="dropdown-menu-item">
+                        <a onClick="changeLanguage('indonesian');">Ind</a>
+                    </li>
+                    <li style="cursor: pointer;" class="dropdown-menu-item">
+                        <a onClick="changeLanguage('english');">Eng</a>
+                    </li>
+                </ul>
+            </li>					
+				
+        </ul>
+    </nav>
+       
+    <main>
+        <div class="left-content">
+	              <!-- <span id="bannerdefault"> -->
+            <!--<img class="banner-image mobile-hidden" src="assets/img/main_banner.jpg">-->
+			<!-- <img class="banner-image mobile-hidden" src="assets/img/tcash-500x500.jpg"> -->
+            <!--<img class="banner-image mobile-only" src="assets/img/main_banner_mobile.jpg">-->
+			<!-- <img class="banner-image mobile-only" src="assets/img/tcash-350x110.jpg"> -->
+          <!-- </span> -->
+            <!-- <span style="display:none;" id="bannertcash"> -->
+                <!-- <img class="banner-image mobile-hidden" src="http://10.1.64.76/login/assets/img/tcash-500x500.jpg"> -->
+                <!-- <img class="banner-image mobile-only" src="http://10.1.64.76/login/assets/img/tcash-350x110.jpg"> -->
+            <!-- </span> -->
+            <!-- <img class="banner-image mobile-hidden" src="assets/img/telkomcraft-desktop.jpg">
+            <img class="banner-image mobile-only" src="assets/img/telkomcraft-mobile.jpg"> -->
+            <span id="randImage"></span>
+            <span id="randImageMobile"></span>
+                  </div>
+        <div class="right-content">
+            <a style="display: none;" class="back-btn" id="backIsWell" href="#" onclick="location.reload()">
+                <img src="assets/img/back.html">
+            </a>
+            <div class="content content-form" id="wifiidLogin">
+                <div class="content-header">
+                    <h3>Login wifi.id</h3>
+                    <p id="buttonbuy">Belum punya paket? <a style="cursor:pointer;" onclick="showButton();"><strong>Beli paket disini!</strong></a></p>
+                    <div style="display: none;" id="showbuy">
+                        <a class="button-md" href="package.html">Beli via Pulsa</a>
+                        <!--<a class="button-md" href="#">Beli via TCASH Web</a>-->
+                        <a class="button-md" style="cursor:pointer;" onclick="showTcashApp();">Beli via LinkAja App</a>
+						<a class="button-md" id="buymerchant" style="cursor:pointer;">Beli via Merchant</a>
+                    </div>
+                    <div style="display: none;margin-top: 20px;" id="showmerchant">
+                        <p style="margin-bottom: 5px;">Kunjungi merchant dibawah ini untuk pembelian voucher.</p>
+                        <img src="assets/img/alfamart_logo.html" width="80">
+                        <img src="assets/img/alfamidi_logo.html" width="120">
+                        <img src="assets/img/akulaku_logo.html" width="40">
+                        <img src="assets/img/tokopedia_logo.html" width="80">
+                    </div>
+                </div>
+                <form method="post" id="loginForm" class="content-main form height-form" style="margin-top: 40px;">
+                    <input type="hidden" name="client_mac" value="">
+					<input type="hidden" name="loc_id" value="">
+					<input type="hidden" name="sessionid" value="">
+					<input type="hidden" name="gw_id" value="">
+                    <label>
+                        Username
+                        <input type="text" id="username_member" name="username_member" autocomplete="off" required placeholder="98xxx atau xxxxx@violet">
+                    </label>
+                    <label>
+                        Password
+                        <input type="password" id="password_member" name="password_member" autocomplete="off" required placeholder="***">
+                    </label>
+                    <button class="button-lg" type="submit">LOGIN</button>
+                </form>
+                <div class="content-nav">
+                    <h4>Atau login dengan:</h4>
+                    <div class="login-options">
+                        <a class="button-md" href="#" data-target="indihomeLogin">IndiHome</a>
+                        <a class="button-md" href="#" data-target="komunitasLogin">Komunitas</a>
+                        <a class="button-md" href="#" data-target="ispoperatorLogin">ISP Operator</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content content-form hidden" id="indihomeLogin">
+                <div class="content-header">
+                    <h3>Relogin Gadget</h3>
+                    <p>Untuk meningkatkan kualitas layanan wifi.id seamless via portal telah <b>ditutup</b> dan Untuk berlangganan layanan wifi.id Seamless gunakan aplikasi MyIndihome</p>
+                    
+                </div>
+                <div class="content-main form">
+                <form id="ReloginSeamless" method="POST" class="form-horizontal" role="form">
+                    <label>
+                        Username
+                        <input type="text" name="username" id="username" required placeholder="xxxxxxxxxxxx">
+                    </label>
+                    <label>
+                        Password
+                        <input type="password" name="password" id="password" required placeholder="****">
+                    </label>
+                    <input type="hidden" value="eDRwMXZTUnFxeWVsVFBNT0RNZk9kdz09" id="primary_op" name="primary_op">
+                    <input type="hidden" value="on" id="register_device" name="register_device">
+                    <input type="hidden" value="" id="mac_client" name="mac_client">
+					<input type="hidden" value="" id="loc_id" name="loc_id">
+					<input type="hidden" value="" id="sessionid" name="sessionid">
+					<input type="hidden" value="" id="gw_id" name="gw_id">
+                    <button class="button-lg" type="submit">LOGIN</button>
+                </form>
+                </div>
+                <div class="content-nav">
+                    <h4>Atau login dengan:</h4>
+                    <div class="login-options">
+                        <a class="button-md" href="#" data-target="wifiidLogin">wifi.id</a>
+                        <a class="button-md" href="#" data-target="komunitasLogin">Komunitas</a>
+                        <a class="button-md" href="#" data-target="ispoperatorLogin">ISP Operator</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content content-form hidden" id="ispoperatorLogin">
+                <div class="content-header">
+                    <h3>Login via ISP Operator</h3>
+                    <p>Login via jaringan operator internasional</p>
+                </div>
+                <div class="content-main form">
+                    <label>
+                        Provider
+                        <select id="roaming">
+                            <option value="" disabled selected>Pilih ISP & Roaming</option>
+                            <option value="51">iPass</option>
+                            <option value="52">Boingo</option>
+                            <option value="53">Nusanet</option>
+                            <option value="54">HTSnet</option>
+                        </select>
+                    </label>
+                    <button class="button-lg" onclick="return Direct_roaming();" type="submit">LANJUTKAN</button>
+                </div>
+                <div class="content-nav">
+                    <h4>Atau login dengan:</h4>
+                    <div class="login-options">
+                        <a class="button-md" href="#" data-target="indihomeLogin">IndiHome</a>
+                        <a class="button-md" href="#" data-target="komunitasLogin">Komunitas</a>
+                        <a class="button-md" href="#" data-target="wifiidLogin">wifi.id</a>
+                    </div>
+                </div>                
+            </div>
+            <div class="content content-form hidden" id="komunitasLogin">
+                <div class="content-header">
+                    <h3>Login via Komunitas</h3>
+                    <p>Pilih komunitasmu</p>
+                </div>
+                <div class="content-main form">
+                    <label>
+                        Komunitas
+                        <select name="list_kom" id="list_kom" onchange="fun_komunitas(this);" class="select-kotak">
+                            <option value="" disabled selected>Pilih Komunitas</option>
+                            <option value="41">Star Wifi</option>
+                            <option value="42">Voucher Gift</option>
+                            <option value="43">Grosir dan UKM</option>
+                            <option value="44">Smart Bisnis</option>
+                            <option value="45">Kampus</option>
+                            <option value="46">Rumah Sakit</option>
+                            <option value="47">Internetku</option>
+                            <!--<option value="48">Itravel Guard</option>-->
+                            <option value="49">SSO</option>
+                        </select>
+                    </label>
+                    <div class="hidden" id="kom_all_kom">
+                    <label>
+                        Username
+                        <input type="text" id="username_komunitas" name="usernamex" placeholder="xxxxxxxxxx">
+                    </label>
+                    <label>
+                        Password
+                        <input class="has-option" type="password" id="password_komunitas" name="password" placeholder="****">
+                        <button class="button-lg" onclick="return login_komunitas();" type="submit">LOGIN</button>
+                    </div>
+                        <span class="hidden" id="kom_itravel_guard"><button class="button-lg" onclick="return Direct_itravel();" type="submit">LANJUTKAN</button></span>
+                        <span class="hidden" id="start_wifi"><a href="#" onclick="kom_start_change();"><strong>Ganti password</strong></a></span>
+                    </label>
+                </div>
+                <div class="content-nav">
+                    <h4>Atau login dengan:</h4>
+                    <div class="login-options">
+                        <a class="button-md" href="#" data-target="indihomeLogin">IndiHome</a>
+                        <a class="button-md" href="#" data-target="wifiidLogin">wifi.id</a>
+                        <a class="button-md" href="#" data-target="ispoperatorLogin">ISP Operator</a>
+                    </div>
+                </div>                
+            </div>
+            <div class="content content-form hidden" id="buyPackageLogin" style="margin-top:25px;font-size: 10px;">
+                    <h3>Pembayaran melalui Aplikasi LinkAja</h3>
+                    <ol type="1" style="line-height: 13px;font-size: 12px;">
+                        <li>Masuk ke aplikasi LinkAja</li>
+                        <li>Pilih menu Internet di halaman dashboard</li>
+                        <li>Pilih Wifi.id</li>
+                        <li>Pilih denom yang akan dibeli</li>
+						<li> Konfirmasi PIN, dan transaksi berhasil</li>
+						<li>Anda dapat melakukan pengecekan pada menu Notifikasi atau "Riwayat Transaksi" lalu pilih menu "Selesai" dan cek user & pass atas transaksi Wifi.id</li>
+						<li>Sudah terima user & pass? Klik Login di bawah ini!</li>
+                    </ol>
+                    <button onclick="location.reload();" style='font-family: "Ubuntu", sans-serif;width: 150px; padding: 10px 0; border-radius: 5px; font-size: 14px; letter-spacing: 0.7px; background-color: #d52830;cursor: pointer;color:white;'>LOGIN</button><br><br>
+                    <hr>
+                    <b>Belum Punya aplikasi LinkAja?</b>
+                    <p>Kamu dapat install aplikasi melalui AppStore atau GooglePlay</p>
+                    <b>Belum Punya Akun LinkAja?</b>
+                    <ul style="line-height: 13px;">
+                        <li>Untuk pengguna Telkomsel, registrasi dengan cara akses *800*88*6-digit-PIN#</li>
+                        <li>Untuk pengguna Operator lain, registrasi melalui aplikasi LinkAja</li>
+                    </ul>
+                    <b>Belum Punya Saldo LinkAja?</b>
+                    <p>Kamu dapat top-up saldo melalui channel Bank Mandiri, BRI, BNI dan BTN (ATM, internet banking, & Mobile Banking) atau menggunakan fitur transfer bank dengan kode bank tujuan 911 + (nomor telepon). Kamu juga bisa ke mini market dan GraPARI terdekat.</p>
+                <!-- <div style="margin-top:70px;" class="content-nav">
+                    <h4>Atau login dengan:</h4>
+                    <div class="login-options">
+                        <a class="button-md" href="#" data-target="indihomeLogin">IndiHome</a>
+                        <a class="button-md" href="#" data-target="wifiidLogin">wifi.id</a>
+                        <a class="button-md" href="#" data-target="ispoperatorLogin">ISP Operator</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+   
+    <!-- <a href="#" style="border-top-right-radius: 5px; border-top-left-radius: 5px;" id="chat-container-show">Chat With Us</a>
+    <div id="chat-container" style="width: 350px!important; border-top-right-radius: 5px; border-top-left-radius: 5px;">
+      <a style="border-top-right-radius: 5px; border-top-left-radius: 5px;" href="#" id="chat-container-hide">Selamat Datang Di Layanan Telkom wifi.id</a>
+        <iframe src="https://interacton4.infomedia.co.id:3007/plugin/webchat/213bge7r087d1" width="100%" height="230%" frameborder="0" scrolling="yes"></iframe> 
+    </div> -->
+    <div style="position: fixed;bottom:20px;right: 0;">
+        <div class="floated-chat-btn" style="bottom: 10px;top: auto !important;display: flex;">
+            <a href="chat.html"><img src="https://interacton4.infomedia.co.id:3007/plugin/client/statics/assets/images/chat2.png" width="32px;"></a>
+        </div>
+        <!-- <iframe src="https://interacton4.infomedia.co.id:3007/plugin/webchat/213bge7r087d1" frameborder="0" style="height:450px;width:320px;"></iframe>  -->
+    </div>
+    
+    <div id="writelog"></div>
+</body>
+<style>
+    .floated-chat-btn {
+        z-index: 100;
+        position: fixed;
+        /* bottom: 10px; */
+        top: 5px;
+        right: 10px;
+        background: red;
+        -webkit-box-shadow: 0 2px 20px 0 rgba(255, 48, 48, 0.693);
+        box-shadow: 0 2px 20px 0 rgba(255, 48, 48,0.75);
+        border-radius: 75px;
+        color: #fff;
+        padding: 10px 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        vertical-align: middle;
+        font-size: 1.08rem;
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        height: 30px;
+        width: 30px;
+    }
+</style>
+<script type="text/javascript">
+        var lnd         = 'https://lp.wifi.id/?aDZDWlNNd29VclNDUXRIdDhqcVlldFE4MmphRzkrd0ljVlVjN2x3T3dPRkQzKzhIa0Q5QmQ3SWVPT0txTDVxRHZUOWZjc0RWKytnL21XWldjZ0lZZHc9PQ==';
+        var uri         = '';
+        var urlx        = 'https://welcome2.wifi.id/authnew/login/check_login.php?ipc=10.212.15.158&amp;gw_id=&amp;mac=&amp;redirect=&amp;wlan=';
+        var url_unej    = 'https%3A%2F%2Fsso.unej.ac.id%2Fcas%2Flogin%3Fservice%3Dhttp%3A%2F%2Fweb.unej.ac.id%2Fwp-login.php%3F%26username%3D%27%2Busername%2B%27%26password%3D%27%2Bpassword%2B%27%26auto%3Dtrue';
+        var client_mac  = '';
+		var loc_id  	= '';
+		var sessionid  	= '';
+		var gw_id	  	= '';
+        var randomtoken = 'aoIPGCJYC5PAWjbGgvful0g4PY9zhN9AxLHUorf9bLI=';
+        var cookFf      = '';
+        var uax         = 'RWMzUlpDQVA5VUZRdzVWZk9yWlhEZz09';
+        var writeurl    = 'https://welcome2.wifi.id/writelog/wifidefault'; 
+        var sce         = '../../../posttoken.html';
+        var scd         = 'https://welcome2.wifi.id/wifi.id-new/default/spin/Auth_nagoya.php';
+        var cbd         = 'https://welcome2.wifi.id/wifi.id-new/default/spin/Auth22_nagoya.php';
+        var cldg        = 'https://welcome2.wifi.id/wifi.id-new/default/spin/Auth_3nagoya.php';
+        var cldx        = '../../../language.html';
+
+        var query = window.location.href.slice(window.location.href.indexOf('?') + 1);                              
+        // $(document).ready( function() {
+        //     $("#writelog").load(writeurl+"?"+query); 
+        // });  
+
+        function showButton() {
+            $("#buttonbuy").hide();
+            $("#showbuy").show();
+        }
+
+        function showTcashApp() {
+            $("#backIsWell").show();
+            $("#wifiidLogin").hide(); 
+            $("#bannerdefault").hide(); 
+            $("#buyPackageLogin").show();
+            $("#bannertcash").show();
+        } 
+
+        $("#buymerchant").click(function () {
+            $("#backIsWell").show();
+            $("#showmerchant").show(); 
+            $("#showbuy").hide();
+			$(".height-form").css("margin-top",'60px');
+			$(".height-form").css("height",'230px');
+        });
+</script>
+<script type="text/javascript">
+     
+            var image = ['indihome kompetisi_portal wifi_500x500.jpg'];
+        var imagesMobile = ['indihome kompetisi_mobile wifi_310x110.jpg'];
+            function getRandomImage() {
+            var num = Math.floor( Math.random() * 1);
+            var img = image[num];
+            document.getElementById("randImage").innerHTML = ('<img class="banner-image mobile-hidden" width="500" src="' + 'assets/img/' + img + '" >')
+        }
+ 
+        function getRandomImageMobile() {
+            var num = Math.floor( Math.random() * 1);
+            var img = imagesMobile[num];
+            document.getElementById("randImageMobile").innerHTML = ('<img class="banner-image mobile-only" width="310" src="' + 'assets/img/' + img + '" >')
+        }
+    </script>
+
+<!-- Mirrored from welcome2.wifi.id/login/assets/fonts/v11/package by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Nov 2019 14:07:48 GMT -->
+</html>
