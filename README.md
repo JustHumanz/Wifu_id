@@ -13,5 +13,5 @@ sudo ./wifi.sh wlan0 @wifu.id
 Deauth the real SSID
 
 # Disclaimer
-..* This tools just for education
-⋅⋅* Do At Your Own Risk
+* This tools just for education
+* Do At Your Own Risk
